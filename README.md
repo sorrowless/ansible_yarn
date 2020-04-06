@@ -9,7 +9,7 @@ Ansible 2.4+
 
 #### Role Variables
 
-You can see all vars in [default vars](default/main.yml).
+You can see all vars in [default vars](defaults/main.yml).
 
 #### Dependencies
 
