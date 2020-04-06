@@ -1,0 +1,7 @@
+---
+- name: Install Yarn
+  hosts: localhost
+  remote_user: root
+
+  roles:
+    - yarn

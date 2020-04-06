@@ -1,0 +1,25 @@
+---
+- name: Add YARN Classic repo key
+  apt_key:
+    url: https://dl.yarnpkg.com/debian/pubkey.gpg
+    state: present
+  tags:
+    - yarn
+    - yarn_classic
+
+- name: Add YARN Classic repository
+  apt_repository:
+    repo: "deb https://dl.yarnpkg.com/debian/ stable main"
+    state: present
+  tags:
+    - yarn
+    - yarn_classic
+
+- name: Install YARN Classic
+  apt:
+    name: yarn
+    state: present
+    install_recommends: no
+  tags:
+    - yarn
+    - yarn_classic
