@@ -1,4 +1,9 @@
 ---
+- name: Ensure needed packages
+  package:
+    name: gpg
+    state: present
+
 - name: Add YARN Classic repo key
   apt_key:
     url: https://dl.yarnpkg.com/debian/pubkey.gpg
