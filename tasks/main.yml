@@ -1,7 +1,9 @@
 ---
 - name: Ensure needed packages
   package:
-    name: gpg
+    name:
+      - gnupg
+      - gnupg2
     state: present
 
 - name: Add YARN Classic repo key
